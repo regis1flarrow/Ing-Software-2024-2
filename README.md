@@ -1,5 +1,5 @@
 # Ingeniería de Software 2024-2
-Practica 02 no veas la cantidad insana de commits de esta practica jajajajaja
+Practica 02 no vean la cantidad insana de commits de esta practica jajajajaja
 
 ## Profesores:
 
