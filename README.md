@@ -1,5 +1,5 @@
 # Ingeniería de Software 2024-2
-Repositorio oficial de la materia de Ingenieria de Software de la Facultad de Ciencias de la UNAM del semestre 2024-2
+Practica 02 no veas la cantidad insana de commits de esta practica jajajajaja
 
 ## Profesores:
 
