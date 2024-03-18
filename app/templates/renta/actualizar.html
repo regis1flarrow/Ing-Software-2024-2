@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Renta</title>
+</head>
+<body>
+    <h1>Actualizar Renta</h1>
+    <form method="POST" action="{{ url_for('renta.actualizar_renta', id=renta.id) }}">
+        <label for="estatus">Estatus de la Renta:</label>
+        <select id="estatus" name="estatus">
+            <option value="1" {% if renta.estatus == 1 %}selected{% endif %}>En Proceso</option>
+            <option value="0" {% if renta.estatus == 0 %}selected{% endif %}>Entregada</option>
+        </select><br>
+        <input type="submit" value="Actualizar Renta">
+    </form>
+</body>
+</html>

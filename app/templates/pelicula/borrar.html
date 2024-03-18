@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrar Película</title>
+</head>
+<body>
+    <h1>Confirmar Borrar Película</h1>
+    <p>¿Estás seguro que deseas borrar la película "{{ pelicula.nombre }}"?</p>
+    <form method="POST" action="{{ url_for('pelicula.borrar_pelicula', id=pelicula.id) }}">
+        <input type="submit" value="Borrar Película">
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrar Renta</title>
+</head>
+<body>
+    <h1>Confirmar Borrar Renta</h1>
+    <p>¿Estás seguro que deseas borrar la renta con ID {{ renta.id }}?</p>
+    <form method="POST" action="{{ url_for('renta.borrar_renta', id=renta.id) }}">
+        <input type="submit" value="Borrar Renta">
+    </form>
+</body>
+</html>

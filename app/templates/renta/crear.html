@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Renta</title>
+</head>
+<body>
+    <h1>Crear Nueva Renta</h1>
+    <form method="POST" action="{{ url_for('renta.crear_renta') }}">
+        <label for="idUsuario">ID Usuario:</label>
+        <input type="number" id="idUsuario" name="idUsuario" required><br>
+        <label for="idPelicula">ID Película:</label>
+        <input type="number" id="idPelicula" name="idPelicula" required><br>
+        <input type="submit" value="Crear Renta">
+    </form>
+</body>
+</html>

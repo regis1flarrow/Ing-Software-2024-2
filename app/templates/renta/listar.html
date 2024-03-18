@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Rentas</title>
+</head>
+<body>
+    <h1>Listado de Rentas</h1>
+    <ul>
+        {% for renta in rentas %}
+            <li>ID Renta: {{ renta.id }} - Usuario: {{ renta.usuario }} - Película: {{ renta.pelicula }} - Fecha Renta: {{ renta.fecha_renta }} - Estatus: {{ renta.estatus }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('renta.crear_renta') }}">Crear Nueva Renta</a>
+</body>
+</html>

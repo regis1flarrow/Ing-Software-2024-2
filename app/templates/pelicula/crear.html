@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Película</title>
+</head>
+<body>
+    <h1>Crear Nueva Película</h1>
+    <form method="POST" action="{{ url_for('pelicula.crear_pelicula') }}">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="genero">Género:</label>
+        <input type="text" id="genero" name="genero" required><br>
+        <label for="duracion">Duración (minutos):</label>
+        <input type="number" id="duracion" name="duracion" required><br>
+        <label for="inventario">Inventario:</label>
+        <input type="number" id="inventario" name="inventario" required><br>
+        <input type="submit" value="Crear Película">
+    </form>
+</body>
+</html>

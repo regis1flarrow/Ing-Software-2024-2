@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Película</title>
+</head>
+<body>
+    <h1>Actualizar Película</h1>
+    <form method="POST" action="{{ url_for('pelicula.actualizar_pelicula', id=pelicula.id) }}">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="{{ pelicula.nombre }}" required><br>
+        <label for="genero">Género:</label>
+        <input type="text" id="genero" name="genero" value="{{ pelicula.genero }}" required><br>
+        <label for="duracion">Duración (minutos):</label>
+        <input type="number" id="duracion" name="duracion" value="{{ pelicula.duracion }}" required><br>
+        <label for="inventario">Inventario:</label>
+        <input type="number" id="inventario" name="inventario" value="{{ pelicula.inventario }}" required><br>
+        <input type="submit" value="Actualizar Película">
+    </form>
+</body>
+</html>

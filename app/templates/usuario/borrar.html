@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrar Usuario</title>
+</head>
+<body>
+    <h1>Confirmar Borrar Usuario</h1>
+    <p>¿Estás seguro que deseas borrar al usuario {{ usuario.nombre }}?</p>
+    <form method="POST" action="{{ url_for('usuario.borrar_usuario', id=usuario.id) }}">
+        <input type="submit" value="Borrar Usuario">
+    </form>
+</body>
+</html>
+

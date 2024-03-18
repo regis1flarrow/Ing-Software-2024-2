@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Películas</title>
+</head>
+<body>
+    <h1>Listado de Películas</h1>
+    <ul>
+        {% for pelicula in peliculas %}
+            <li>{{ pelicula.nombre }} - {{ pelicula.genero }} - Duración: {{ pelicula.duracion }} minutos</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('pelicula.crear_pelicula') }}">Crear Nueva Película</a>
+</body>
+</html>
